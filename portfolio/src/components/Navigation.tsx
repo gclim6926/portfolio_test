@@ -56,7 +56,7 @@ export default function Navigation() {
 
           {/* 데스크톱 메뉴 */}
           <div className="hidden md:flex items-center space-x-1">
-            {navItems.map((item, index) => (
+            {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
@@ -102,12 +102,11 @@ export default function Navigation() {
           isMobileMenuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
         }`}>
           <div className="py-4 space-y-2 bg-slate-800/90 backdrop-blur-md border border-cyan-400/30 rounded-lg mt-2 shadow-[0_8px_32px_rgba(6,182,212,0.1)]">
-            {navItems.map((item, index) => (
+            {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
                 className="group block w-full text-left px-4 py-3 text-cyan-300 hover:text-white hover:bg-cyan-400/10 transition-all duration-300 font-mono text-sm uppercase tracking-wider relative"
-                style={{ animationDelay: `${index * 100}ms` }}
               >
                 <span className="relative z-10 flex items-center gap-3">
                   <span className="text-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">{'>'}</span>

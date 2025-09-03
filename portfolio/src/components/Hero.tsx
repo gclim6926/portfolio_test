@@ -79,9 +79,9 @@ export default function Hero() {
         <div className="relative mb-12 max-w-2xl mx-auto">
           <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-purple-600 rounded-lg blur opacity-20"></div>
           <p className="relative bg-slate-900/80 backdrop-blur-sm border border-cyan-400/30 rounded-lg p-6 text-cyan-100 leading-relaxed font-mono text-sm">
-            <span className="text-cyan-400">//</span> 미래를 코딩하는 개발자<br/>
-            <span className="text-cyan-400">const</span> <span className="text-purple-400">passion</span> = <span className="text-green-400">'혁신적인 기술로 세상을 바꾸기'</span>;<br/>
-            <span className="text-cyan-400">const</span> <span className="text-purple-400">mission</span> = <span className="text-green-400">'완벽한 사용자 경험 구현'</span>;
+            <span className="text-cyan-400">{'//'}</span> 미래를 코딩하는 개발자<br/>
+            <span className="text-cyan-400">const</span> <span className="text-purple-400">passion</span> = <span className="text-green-400">&apos;혁신적인 기술로 세상을 바꾸기&apos;</span>;<br/>
+            <span className="text-cyan-400">const</span> <span className="text-purple-400">mission</span> = <span className="text-green-400">&apos;완벽한 사용자 경험 구현&apos;</span>;
           </p>
         </div>
         
